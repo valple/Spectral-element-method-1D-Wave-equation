@@ -21,7 +21,7 @@ def gll(n):
     return x, w
 
 # First derivative of lagrange polynomials
-# 
+# Evaluates at x the first derivative of the j-th lagrange basis polynomial for a set of points xi
 def lag_deriv(x, j, xi):
     """First derivative of j-th lagrange basis polynomial for points xi evaluated at x"""
     sum = 0
@@ -35,3 +35,5 @@ def lag_deriv(x, j, xi):
             fac = fac * 1/(xi[j]- xi[i])
             sum = sum + fac
     return sum
+
+
